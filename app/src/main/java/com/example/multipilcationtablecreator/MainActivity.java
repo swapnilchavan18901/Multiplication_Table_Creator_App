@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String value= Edit1. getText(). toString();
                 int Value=Integer. parseInt(value);
-                populate(Value);
+                getTable(Value);
             }
         });
 
@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void populate(int table){
+    public void getTable(int table){
         String ans = "";
         for (int i =1; i<=10;i++){
            ans+=(table + " X " + i + " = " + table*i + "\n");
         }
-        System.out.println(ans);
+
         textView.setText(ans);
     }
 
